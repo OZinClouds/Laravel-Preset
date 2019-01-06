@@ -1,0 +1,51 @@
+
+$enable-rounded:            false;
+
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Typography
+// $font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$bg:    #fffccc;
+$primary: #38667B;
+$info: #809DAB;
+$success: $teal;
+$danger: tomato;
+$rose: #8C5E58;
+
+// * initiate theme-colors array
+$theme-colors: ();
+// * assign new colors or default defined color params
+$theme-colors: map-merge(
+  (
+	"white":	$white,
+	"bg":	$bg,
+	"rose":	$rose,
+
+    "purple":  $purple
+  ),
+  $theme-colors
+);
+
+/* // *Body Colors */
+$body-bg:		$bg;
+$body-color:	$indigo;
+
+// * link color
+$link-color:                $purple;

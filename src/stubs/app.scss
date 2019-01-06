@@ -1,0 +1,19 @@
+/* // * firefox fix ...*/
+@font-face { font-family: 'FontAwesome'; src: local('FontAwesome'); }
+
+
+// * first reboot BS4 for using mixins and built-in variables
+@import "~bootstrap/scss/bootstrap-reboot";
+
+
+// Variables
+@import 'variables';
+
+
+// * partials  to be glob imported (node-sass-globe-import)
+@import './partials/*.scss';
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
