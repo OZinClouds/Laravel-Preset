@@ -15,6 +15,7 @@ class Preset extends ThePreset
         static::reshapeJSDirectory();
         static::reshapeMix();
         static::updatePackages();
+        static::preparePhpUnitXML();
 
     }
 
@@ -35,6 +36,11 @@ class Preset extends ThePreset
     public static function reshapeMix()
     {
         copy(__DIR__ . '/stubs/webpack.mix.js', base_path('webpack.mix.js'));
+    }
+
+    public static function preparePhpUnitXML()
+    {
+        copy(__DIR__ . '/stubs/phpunit.xml', base_path('phpunit.xml'));
     }
 
     public static function updatePackageArray($packages)

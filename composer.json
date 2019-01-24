@@ -12,7 +12,8 @@
     "minimum-stability": "stable",
 
     "require": {
-        "laravel/telescope": "~1.0"
+        "laravel/telescope": "~1.0",
+        "barryvdh/laravel-debugbar": "^3.2"
     },
     "autoload": {
         "psr-4": {
